@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Page</title>
+  </head>
+  <body>
+    <!-- Forms and Input Element <input> -->
+    <h1>Forms Demo</h1>
+    <form action="/search">
+      <p>
+        <label for="username">Username: </label>
+        <input
+          type="text"
+          ,
+          placeholder="Enter your Username"
+          ,
+          id="username"
+        />
+      </p>
+      <p>
+        <label for="password">Password: </label>
+        <input
+          type="password"
+          ,
+          placeholder="Enter a Password"
+          ,
+          id="password"
+        />
+      </p>
+
+      <p>
+        <label for="color">Color: </label>
+        <input type="color" , id="color" />
+      </p>
+      <p>
+        <label for="month">Month: </label>
+        <input type="month" , placeholder="Enter a Month" , id="month" />
+      </p>
+      <p>
+        <label for="number">Number: </label>
+        <input
+          type="number"
+          ,
+          placeholder="Enter a number"
+          ,
+          id="number"
+          min="1"
+          max="10"
+        />
+      </p>
+      <p>
+        <label for="time"
+          >Time: <input type="time" , placeholder="Enter the Time" , id="time"
+        /></label>
+      </p>
+
+      <button type="button">Submit</button>
+      <!-- Alternative way of creating button -->
+      <input type="submit" , value="Click me" />
+    </form>
+
+    <h2>Hijacking Searches:</h2>
+    <button>Not Inside Form</button>
+
+    <h3>Youtube Search</h3>
+    <form action="https://www.youtube.com/results">
+      <input type="text" name="search_query" , placeholder="Youtube Search" />
+      <button>Search</button>
+    </form>
+
+    <h3>Google Search</h3>
+    <form action="https://www.google.com/search">
+      <input type="text" name="q" placeholder="Google Search" />
+      <button>Search</button>
+    </form>
+
+    <h3>LinkedIn Search</h3>
+    <form action="https://www.linkedin.com/search/results/all/">
+      <input type="text" name="keywords" placeholder="Linkedin Search" />
+      <button>Search</button>
+    </form>
+
+    <h2>More Inputs!</h2>
+
+    <!-- Checkboxes -->
+    <form action="/birds">
+      <!-- 'checked' makes the box checked by default -->
+      <input type="checkbox" name="agree_tos" id="agree" checked />
+      <label for="agree">I Agree</label>
+
+      <!-- Radio Buttons -->
+      <p>
+        Select shirt size:
+        <!-- Name has to be the same to select any one out of three -->
+        <label for="S">S</label>
+        <input type="radio" name="size" id="S" value="S" />
+        <label for="M">M</label>
+        <input type="radio" name="size" id="M" value="M" />
+        <label for="L">L</label>
+        <input type="radio" name="size" id="L" value="L" />
+      </p>
+
+      <!-- Selects -->
+      <p>
+        <select name="meal" id="meal">
+          Pleases select a meal type:
+          <option value="fish">Fish</option>
+          <option value="veg" selected>Vegetarian</option>
+          <option value="steak">Steak</option>
+        </select>
+      </p>
+
+      <!-- Ranges -->
+      <p>
+        <label for="cheese">Select the amount of cheese: </label>
+        <!-- 'value' acts as default state -->
+        <input
+          type="range"
+          name="cheese"
+          id="cheese"
+          min="0"
+          max="5"
+          name="cheese_level"
+          value="1"
+        />
+      </p>
+
+      <!-- Text Area -->
+      <label for="requests">Any special requests? </label>
+      <p>
+        <textarea
+          name="requests"
+          id="requests"
+          rows="10"
+          cols="40"
+          placeholder="Type here"
+        ></textarea>
+      </p>
+      <button>Submit</button>
+    </form>
+
+    <form action="/dummy">
+      <h2>Validations</h2> 
+      <label for="first">Enter first name: </label>
+      <!-- 'required' can be used to make sure field is not left empty -->
+      <input type="text" name="first" id="first" required />
+
+      <p>
+        <label for="email">Enter your email: </label>
+        <!-- <input type="email" name="email" id="email" required /> -->
+        <input type="url" />
+      </p>
+
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
