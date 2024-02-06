@@ -1,0 +1,124 @@
+/* Universal Selector */
+* {
+  background-color: #ecebe4;
+  font-family: Fira Code;
+  font-size: 20px;
+}
+
+body {
+  background-color: #daddd8;
+}
+
+button {
+  font-size: 30px;
+  background-color: #daddd8;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ID Selector using #<id of the element> */
+#signup {
+  background-color: #1c1c1c;
+  color: #eef0f2;
+}
+
+#login {
+  background-color: #fafaff;
+}
+
+/* Selecting multiple headings using element selector*/
+h1,
+h2 {
+  color: #1c1c1c;
+}
+
+span {
+  color: #575757;
+}
+
+/* Class Selector (Applied to multiple elements) */
+.tagg {
+  background-color: #242424;
+  color: #ffffff;
+}
+
+/* The Descendent Selector */
+li a {
+  color: #588b8b;
+  font-family: Fira Code;
+}
+
+section span a {
+  color: lightseagreen;
+  font-family: Fira Code;
+}
+
+/* Adjascent selector */
+h2 + button {
+  font-size: 25px;
+}
+
+/* Direct descendent selector */
+footer > a {
+  color: black;
+}
+
+/* Attribute Selector */
+input[type="password"] {
+  color: #588b8b;
+}
+
+/* href input is a keyword that exists in the href */
+a[href*="google"] {
+  color: black;
+}
+
+/* Pseudo Classes */
+button:hover {
+  background-color: #6c757d;
+}
+
+a:hover {
+  background-color: #495057;
+  font-weight: bold;
+}
+
+button:active {
+  background-color: #9ec1a3;
+}
+
+#signup:hover {
+  background-color: #dee2e6;
+}
+
+#signup:active {
+  background-color: #9ec1a3;
+}
+
+#login:hover {
+  background-color: #495057;
+}
+
+#login:active {
+  background-color: #9ec1a3;
+}
+
+.post:nth-of-type(2n) {
+  background-color: #e0dfd9;
+}
+
+/* Pseudo Element */
+h2::first-letter {
+  font-size: 30px;
+}
+
+p::selection {
+  background-color: #6c757d;
+}
+
+/* Specificity (ID > CLASS > ELEMENT) */
+button:hover {
+  font-size: 22px;
+}
