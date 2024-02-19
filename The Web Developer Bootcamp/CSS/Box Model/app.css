@@ -1,0 +1,57 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: #fdfcdc;
+}
+
+h1 {
+    background-color: #ffc8aa;
+    width: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0px;
+}
+
+#one {
+    border-width: 5px;
+    border-color: #ffaa99;
+    border-style: dashed;
+    /* padding-right: 10px;
+    padding-left: 10px; */
+    padding: 10px;
+    display: inline-block;
+    margin: 50px;
+}
+
+#two {
+    border-width: 5px;
+    border-color: #e18c91;
+    border-style: solid;
+    /* padding-right: 10px;
+    padding-left: 10px; */
+    padding: 10px;
+    display: inline-block;
+    margin: 50px;
+}
+
+#three {
+    border-width: 5px;
+    border-color: #ac7683;
+    border-style: groove dashed;
+    border-radius: 5%;
+    /* padding-right: 10px;
+    padding-left: 10px; */
+    padding: 10px;
+    display: inline-block;
+    margin: 50px;
+}
+
+button {
+    /* vertical | horizontal */
+    /* top | right | bottom | left */
+    padding: 5px 10px 10px 5px;
+    background-color: #00afb9;
+    color: white;
+    /* 'display' is used to hide the item */
+    display: none;
+}
