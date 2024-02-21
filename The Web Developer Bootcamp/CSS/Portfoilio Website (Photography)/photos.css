@@ -1,0 +1,21 @@
+nav {
+  font-family: "Monoton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  text-transform: uppercase;
+  width: 30%;
+  margin-left: calc(10%/6);
+  /* padding: top&bottom left&right */
+  padding: 20px 0;
+}
+
+nav:hover {
+  color: rgb(121, 121, 121);
+  transition: color 3s;
+}
+
+img {
+  width: 30%;
+  margin: calc(10% / 6);
+}
