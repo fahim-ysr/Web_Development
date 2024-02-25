@@ -1,0 +1,45 @@
+ /* Main Axis = x, Cross Axis = y */
+
+ body {
+    font-family: "Open Sans", sans-serif;
+  }
+  h1 {
+    text-align: center;
+  }
+  #container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    /* flex-direction: column; */
+    flex-direction: row;
+    justify-content: flex-start;
+
+    /* For Direction of Cross Axis */
+    /* flex-wrap: nowrap; */
+    /* Cross Axis: top -> bottom */
+    /* flex-wrap: wrap; */
+    /* Cross Axis: bottom -> top */
+    flex-wrap: wrap-reverse;
+
+    /* For Cross Axis */
+    /* Main Axis: -, Cross Axis: top */
+    /* align-content: flex-start; */
+    /* Main Axis: -, Cross Axis: center */
+    align-items: center;
+    /* Main Axis: -, Cross Axis: bottom */
+    /* align-items: end; */
+    /* Main Axis: <->, Cross Axis: <-> */
+    /* align-items: flex-end; */
+    align-items: baseline;
+  }
+  
+  #container div {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    font-size: 4em;
+  }
+  
