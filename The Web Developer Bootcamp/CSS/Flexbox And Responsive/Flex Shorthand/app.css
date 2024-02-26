@@ -1,0 +1,54 @@
+#container {
+    width: 90%;
+    background-color: #003049;
+    /* height: 500px; */
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    max-width: 300px;
+
+    /* Defines the initial size of an element before additional space is distributed */
+    flex-basis: 200px;
+    /* flex-grow: 1; */
+}
+
+div:nth-of-type(1) {
+    /* Controls the amount of available space an element should take up */
+    /* flex-grow: 1; */
+    /* If items are larger than the containers, they shrink according to flex-shrink */
+    /* (Works if the flex-wrap: wrap is turned off) */
+    flex-shrink: 2;
+}
+
+div:nth-of-type(5) {
+    flex-grow: 2;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    height: 500px;
+    display: flex;
+}
+
+main .sidebar {
+    background-color: #6930c3;
+    border: solid white;
+    /* Three vals: flex-grow | flex-shrink | flex-basis */
+    flex: 1 2 300px;
+}
+
+main .maincontent {
+    background-color: #64dfdf;
+    flex: 2 1 800px;
+}
