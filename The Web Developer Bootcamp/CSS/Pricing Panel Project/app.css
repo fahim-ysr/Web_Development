@@ -3,12 +3,18 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     background-color: lightskyblue;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 .panel {
@@ -25,6 +31,7 @@ body {
 
 .pricing-plan {
     border-bottom: 1px solid grey;
+    padding: 20px;
 }
 
 .pricing-plan:last-child {
@@ -33,6 +40,7 @@ body {
 
 .pricing-img {
     margin-bottom: 25px;
+    width: 100px; /* Ensuring consistent image size */
 }
 
 .pricing-header {
@@ -43,10 +51,10 @@ body {
 
 .pricing-features {
     margin: 50px 0 25px;
-    color: #016ff9;
+    list-style: none; /* Removing bullet points */
 }
 
-.pricing-features-items {
+.pricing-features-item {
     font-weight: 600;
     letter-spacing: 1px;
     font-size: 12px;
@@ -55,8 +63,8 @@ body {
     border-top: 1px solid #e1f1ff;
 }
 
-.pricing-features-items:last-child {
-    border-top: 1px solid white;
+.pricing-features-item:last-child {
+    border-bottom: 1px solid #e1f1ff;
 }
 
 .pricing-price {
@@ -74,10 +82,12 @@ body {
     padding: 15px 35px;
     margin: 25px;
     transition: all 200ms ease-in-out;
+    text-decoration: none; /* Removing underline from links */
 }
 
 .pricing-button:hover, .pricing-button:focus {
     background-color: #e1f1ff;
+    color: #0157b3; /* Changing text color on hover for better visibility */
 }
 
 @media (min-width: 900px) {
@@ -88,6 +98,7 @@ body {
     .pricing-plan {
         border-bottom: none;
         border-right: 1px solid #e1f1ff;
+        flex: 1; /* Equal width for all pricing plans */
         padding: 25px 50px;
     }
 
